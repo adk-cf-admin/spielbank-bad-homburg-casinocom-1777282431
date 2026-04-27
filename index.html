@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="./index.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1777281209-logo-white-1-1.webp" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Spielbank Bad Homburg — Roulette, Black Jack, Poker, Automatenspiel, Jackpots und Le Blanc</title>
+    <meta name="description"
+          content="Die Spielbank Bad Homburg verbindet klassisches Casinospiel, über 160 moderne Automaten, attraktive Jackpots, Restaurant Le Blanc, Dostojewskis Bar, Lounge Night, Turniere und Erlebnisgutscheine zu einem stilvollen Abend voller Spiel, Genuss und Unterhaltung.">
+    <link rel="canonical" href="https://spielbank-bad-homburg-casino.com">
+    <meta property="og:title" content="Spielbank Bad Homburg — Roulette, Black Jack, Poker, Automatenspiel, Jackpots und Le Blanc">
+    <meta property="og:description"
+          content="Die Spielbank Bad Homburg verbindet klassisches Casinospiel, über 160 moderne Automaten, attraktive Jackpots, Restaurant Le Blanc, Dostojewskis Bar, Lounge Night, Turniere und Erlebnisgutscheine zu einem stilvollen Abend voller Spiel, Genuss und Unterhaltung.">
+    <meta property="og:url" content="https://spielbank-bad-homburg-casino.com">
+    <meta property="og:site_name" content="Spielbank Bad Homburg — Roulette, Black Jack, Poker, Automatenspiel, Jackpots und Le Blanc">
+    <meta property="og:locale" content="de-DE">
+    <meta property="og:image" content="_assets/images/1777281232-startovaia-kartinka-dlia-nazemnogo-kazino-poker-ka-5.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="spielbank-bad-homburg-casino.com">
+    <meta name="twitter:title" content="Spielbank Bad Homburg — Roulette, Black Jack, Poker, Automatenspiel, Jackpots und Le Blanc">
+    <meta name="twitter:description"
+          content="Die Spielbank Bad Homburg verbindet klassisches Casinospiel, über 160 moderne Automaten, attraktive Jackpots, Restaurant Le Blanc, Dostojewskis Bar, Lounge Night, Turniere und Erlebnisgutscheine zu einem stilvollen Abend voller Spiel, Genuss und Unterhaltung.">
+    <meta name="twitter:image" content="_assets/images/1777281232-startovaia-kartinka-dlia-nazemnogo-kazino-poker-ka-5.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1777281260-cropped-fbs-favicon-32x32.webp" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="de-DE">
+
+    <link rel="apple-touch-icon" href="_assets/images/1777281111-cropped-fbs-favicon-32x32.webp" sizes="96x96">
+    <link rel="icon" href="_assets/images/1777281111-cropped-fbs-favicon-32x32.webp" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1777281295-startovaia-kartinka-dlia-nazemnogo-kazino-poker-ka-5.webp" as="image" fetchpriority="high">
+
+    <link rel="alternate" hreflang="x-default" href="https://spielbank-bad-homburg-casino.com" />
+    <link rel="alternate" hreflang="de" href="https://spielbank-bad-homburg-casino.com" />
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#D00E14"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#4BC81E"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#D00E14"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#D00E14"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#4BC81E"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#ffffff"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+    <header class="header" id="top">
+        <div class="headerBlock">
+            <div class="headerLogoContainer"><a href="https://spielbank-bad-homburg-casino.com" aria-label="Main page"><img class="header__logo logo"
+                                                                                                     src="_assets/images/1777281209-logo-white-1-1.webp" alt="Spielbank Bad Homburg Logo" /></a></div>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" target="_blank" href="casino.html?id=example-offer-id"
+                                         aria-label="Registrieren" id="navSignUp"> Registrieren </a></li>
+                <li class="nav__item nav__itemLarge"><a class="nav__link nav__linkLarge" target="_blank"
+                                                        href="casino.html?id=example-offer-id" aria-label=" Jetzt spielen" id="navPlayNow">  Jetzt spielen </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextMobile">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Spiel starten"><span
+                            class="heroButton btn btn--large">Bonus sichern</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Spielbank Bad Homburg — Casino, Jackpots, Le Blanc und Lounge Night</h1>
+            </div>
+        </section>
+        <div class="bonusesCircleContainer">
+            <section class="topCasino">
+                <div class="container">
+                    <div class="topCasinoBlock block">
+                        <h2 class="topCasinoTitle title"><span>Top-Casino <span id="countryName"></span></span>
+                        </h2>
+                        <div class="topCasinoGroup" id="casinoCardContainer">
+                            <!-- Casino cards will be dynamically inserted here --></div><button
+                            class="topCasinoButton btn btn--large" id="showMoreButton"> Alle Casino </button>
+                    </div>
+                </div>
+            </section>
+            <section class="bonusDetails" id="bonuses">
+                <div class="container">
+                    <div class="bonusDetailsBlock block">
+                        <h2 class="bonusDetailsTitle title"><span>Bonusdetails</span></h2>
+                        <div class="bonusDetailsGroup">
+                            <div class="bonusTable">
+                                <div class="bogradientContainer">
+                                    <div class="bonusTableRow bonusTableHeader">
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText bonusHeaderCasino">Casino</p>
+                                        </div>
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText bonusDetailsWelcome">Boni</p>
+                                        </div>
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText">Rate</p>
+                                        </div>
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText bonusHeaderTextSpins">Frei Spins</p>
+                                        </div>
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText">Mehr Infos</p>
+                                        </div>
+                                        <div class="bonusTableHead">
+                                            <p class="bonusHeaderText bonusClaimBonus">Erhalten</p>
+                                        </div>
+                                    </div>
+                                </div><!-- Bonus rows will be dynamically inserted here -->
+                                <div id="bonusTableRows"></div>
+                            </div>
+                        </div><button class="bonusDetailsButton btn btn--large" id="refreshButton">  Aktualisieren
+                    </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="advantagesCircleContainer">
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantagesBlock block">
+                        <div class="advantagesDescription">
+                            <h2 class="advantagesTitle title">Vorteile</h2>
+                            <ul class="advantagesList">
+                                <li class="providersGroup">In der Spielbank Bad Homburg verbinden wir traditionsreiches Casino-Flair mit modernen Spielangeboten, kulinarischem Anspruch und lebendiger Abendunterhaltung.</li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Homburger Glück mit starken Jackpot-Chancen</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Gold Jack mit bis zu 300:1</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Ultimate Jackpot schon ab 2 Euro</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Automatenspiel bereits ab 1 Cent</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Über 160 moderne Spielautomaten</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Le Blanc für stilvollen Genuss</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Lounge Night mit wechselnden DJs</p>
+                                </li>
+                                <li class="providersGroup">Unser Casino ist ideal für Gäste, die Roulette, Black Jack, Ultimate Texas Hold’em, Automatenspiel, Fine Dining und Lounge-Atmosphäre an einem Ort erleben möchten. Wir schaffen besondere Abende mit Jackpots, Turnieren, stilvollen Bars, Restaurantgenuss und Musik bis tief in die Nacht.</li>
+                            </ul><a class="advantagesLink" id="advantagesLink" target="_blank" href="/" aria-label="Mehr erfahren"><span
+                                class="advantagesButton btn btn--large">Mehr erfahren</span></a>
+                        </div>
+                        <div class="advantagesMobile">
+                            <h2 class="advantagesTitle title advantagesAppTitle">Spielbank Bad Homburg App</h2><img
+                                class="advantagesMobilePhone" src="_assets/images/1777281403-bad.webp" title="Spielbank Bad Homburg Mobile"
+                                alt="Spielbank Bad Homburg App" />
+                            <div class="advantagesStoreGroup"><a href="/" id="appStoreLink" aria-label="Play game"
+                                                                 target="_blank"><img class="advantagesStore" width="181" height="53"
+                                                                                      src="./assets/images/advantages/app-store.webp" alt="iOs App " title="Spielbank Bad Homburg App"/></a><a
+                                    href="/" id="googlePlayLink" aria-label="Play game" target="_blank"><img
+                                    class="advantagesStore" width="181" height="54"
+                                    src="./assets/images/advantages/google-play.webp" alt="android App Spielbank Bad Homburg App" title="Spielbank Bad Homburg App" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" id="games">
+                <div class="container">
+                    <div class="gamesBlock block">
+                        <h2 class="gamesTitle title"><span>Beliebte Spiele</span></h2>
+                        <div class="gamesGroup" id="gamesContainer"><!-- Games will be dynamically inserted here -->
+                        </div><a target="_blank" class="gamesLink" id="allGamesLink" href="/" aria-label=" Alle Spiele"><span
+                            class="gamesButton btn btn--large"> Alle Spiele</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Über das Spielbank Bad Homburg</h2>
+                        <div class="historyGroup">
+                            <div class="historyColumn">
+                                <div class="historyText">
+                                    <p class="historyDescription">Die Spielbank Bad Homburg überzeugt mit starken Gewinnchancen, Turnierpreisen und einem klassischen Spielsaal mit besonderem Charakter. Wir machen jeden Besuch zu einem stilvollen Erlebnis aus Spiel, Genuss und Entertainment.</p>
+                                    <ul class="historyList">
+                                        <li class="historyItem">Jackpot €107.608.</li>
+                                        <li class="historyItem">Gold Jack 300:1.</li>
+                                        <li class="historyItem">Jackpot Festival €24.864.</li>
+                                    </ul>
+                                    <p class="historyDescription">In der Spielbank Bad Homburg verbinden wir klassisches Casinospiel mit einem modernen Abend voller Stil, Genuss und Unterhaltung. Unser Haus steht für elegantes Spielbank-Flair, persönliche Gastfreundschaft und eine besondere Atmosphäre im historischen Kurpark. </p>
+                                </div>
+                            </div>
+                            <div class="historyColumn"><img class="historyImage"
+                                                            src="_assets/images/1777281412-mac-bad.webp" alt="History" title="Spielbank Bad Homburg Desktop"/></div>
+                        </div>
+                        <p class="historyDescription">Bei uns erleben Gäste Roulette, Black Jack, Poker und ein vielseitiges Automatenspiel in einem gepflegten Ambiente. Der Abend kann mit einem Spiel am Tisch beginnen, mit einem Dinner im Le Blanc weitergehen und an der Bar oder in der Lounge ausklingen. In unserem Restaurant legen wir Wert auf saisonale Küche, kreative Gerichte und eine feine Auswahl passender Weine. An Dostojewskis Bar genießen Gäste Cocktails, Longdrinks und ausgewählte Spirituosen in stilvoller Umgebung. Samstags wird unsere Lounge zum Treffpunkt für Musik, Tanz und entspannte Nightlife-Stimmung. Für spielbegeisterte Gäste bieten wir Turniere, besondere Aktionen und abwechslungsreiche Eventformate. Wir setzen auf Qualität, Eleganz, Service und das Gefühl eines besonderen Abends. Die Spielbank Bad Homburg ist unser Ort für Spiel, Genuss, Geschichte und lebendige Unterhaltung.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Spielbank Bad Homburg: Öffnungszeiten, Zahlungsmethoden und Treueprogramm</h2>
+                        <div class="historyDescription"><h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Spiel, Genuss und Lounge in besonderem Ambiente
+</h3>
+<p>
+In der Spielbank Bad Homburg gestalten wir Abende, die klassisches Casinospiel, modernes Automatenspiel, kulinarischen Genuss und lebendige Lounge-Kultur miteinander verbinden. Unser klassischer Spielsaal steht für Roulette, Black Jack und Poker in einem eleganten Rahmen, in dem Gäste ein besonderes Spielbankgefühl erleben. Das Automatenspiel ist täglich geöffnet und bietet über 160 moderne Geräte, Touchbet-Roulette, attraktive Jackpots und Einsätze bereits ab 1 Cent. Das Klassische Spiel ist von Sonntag bis Donnerstag von 14:30 bis 03:00 Uhr und am Freitag sowie Samstag von 14:30 bis 04:00 Uhr geöffnet, Spielbeginn ist jeweils ab 15:00 Uhr. Das Automatenspiel begrüßt unsere Gäste täglich von 12:00 bis 04:00 Uhr und bietet damit viel Flexibilität für spontane Besuche, lange Abende und besondere Spielmomente. Im Restaurant Le Blanc servieren wir kreative Küche mit regionalen, internationalen und saisonalen Akzenten, ideal für ein stilvolles Dinner vor oder nach dem Spiel. An Dostojewskis Bar genießen Gäste Cocktails, Longdrinks und ausgewählte Spirituosen in gepflegter Atmosphäre. Die Jackpot-Bar ergänzt unser Automatenspiel mit einem angenehmen Ort für Getränke und kurze Pausen. Samstags wird unsere Lounge ab 21:00 Uhr zum Treffpunkt für Musik, Tanz und wechselnde DJs. Für Gäste, die den Besuch mit einer Übernachtung verbinden möchten, bieten wir Empfehlungen zu ausgewählten Hotels in der Nähe unseres Hauses. Unsere Erlebnisgutscheine verbinden Eintritt, Sekt, Glücksjetons, Spiel­erklärungen, Menüs und besondere Momente. Mit der personalisierten Spielerkarte im Automatenspiel können Gäste Bonuspunkte sammeln und direkt wieder für das Spiel nutzen.
+</p>
+<br>
+<table style="width: 100%; border-collapse: collapse; margin: 20px auto; font-family: sans-serif; color: #ffffff;font-size:14px">
+  <thead>
+    <tr style="background-color: #D00E14;">
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">Bereich</th>
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">Tage</th>
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">
+Öffnungs&shy;zeiten
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Klas&shy;si&shy;sches Spiel: Roulette, Black Jack, Poker</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Sonntag bis Donnerstag</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">14:30 – 03:00 Uhr</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Klas&shy;si&shy;sches Spiel: Roulette, Black Jack, Poker</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Freitag und Samstag</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">14:30 – 04:00 Uhr</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Spiel&shy;beginn an den Tischen</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Täglich während der Öffnung</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">ab 15:00 Uhr</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Auto&shy;maten&shy;spiel und Touchbet-Roulette</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Täglich</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">12:00 – 04:00 Uhr</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Restaurant Le Blanc</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Täglich</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">ab 18:00 Uhr</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Lounge</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Samstag</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">21:00 – 03:00 Uhr</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Service, Zahlung, Währung und Gewinnauszahlung
+</h3>
+<p>
+In der Spielbank Bad Homburg legen wir großen Wert auf persönlichen Service, denn ein gelungener Abend beginnt für uns bereits beim Empfang. Unser Team unterstützt Gäste bei der Registrierung, beim ersten Besuch, bei Fragen zu Spielbereichen, Eintritt, Restaurant, Bars, Events und Automatenkarten. Im Klassischen Spiel begleiten erfahrene Croupiers die Partien an Roulette, Black Jack und Poker, während unser Team im Automatenspiel bei Geräten, Kartenfunktionen und Guthaben gerne weiterhilft. Die Hauptsprache in unserem Haus ist Deutsch, zugleich achten wir auf klare, freundliche und verständliche Kommunikation, damit sich neue und erfahrene Gäste gleichermaßen wohlfühlen.
+</p>
+<br>
+<p>
+Die Spielwährung in der Spielbank Bad Homburg ist der Euro. Im Klassischen Spiel nutzen Gäste Jetons, die im Rahmen der Kassenabläufe ausgegeben und später wieder eingelöst werden können. Im Automatenspiel kann direkt mit Banknoten gespielt werden, außerdem steht unser modernes Cashless-Karten-System zur Verfügung. Mit dieser Karte lässt sich Guthaben bequem von Gerät zu Gerät mitnehmen, ohne Münzen verwenden zu müssen.
+</p>
+<br>
+<p>
+Unsere Spielerkarte erhalten Gäste an der Kasse im Automatenspiel. Auf Wunsch kann eine personalisierte Variante genutzt werden, mit der bei Einsätzen Bonuspunkte gesammelt und wieder für das Spiel eingesetzt werden können. Gewinne im Automatenspiel lassen sich auf der Karte speichern, weiterverwenden oder über die Kasse auszahlen. Die Cash-out-Funktion am Automaten macht das Beenden einer Spielsitzung komfortabel und übersichtlich.
+</p>
+<br>
+<p>
+Gewinne aus dem Klassischen Spiel werden über Jetons und die Kasse abgewickelt, während Gewinne aus dem Automatenspiel über Guthaben, Spielerkarte und Kassenservice organisiert werden. Bei größeren Gewinnen begleitet unser Team die weiteren Schritte und sorgt für einen geordneten, nachvollziehbaren Ablauf. Für private Gäste gelten Spielgewinne in der Regel als besondere Gewinne aus dem Spiel und nicht als laufendes Einkommen; individuelle steuerliche Fragen sollten bei Bedarf persönlich geprüft werden. In unserem Haus stehen wir für klare Abläufe, verlässlichen Service und eine angenehme Atmosphäre vom ersten Einsatz bis zur Auszahlung.
+</p>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Besuchsregeln, Dresscode und Anreise
+</h3>
+<p>
+In der Spielbank Bad Homburg möchten wir unseren Gästen einen stilvollen, angenehmen und gut organisierten Aufenthalt ermöglichen. Der Zutritt ist ab 18 Jahren möglich und erfolgt mit einem gültigen Lichtbildausweis. Die Registrierung am Empfang sorgt für klare Abläufe und eine geschützte Atmosphäre in unserem Haus. Da sich unser Restaurant Le Blanc und die Lounge innerhalb des Spielbankgebäudes befinden, gelten die Zutrittsregeln auch für diese Bereiche. Im Klassischen Spiel legen wir Wert auf einen gepflegten, eleganten Kleidungsstil, der zum besonderen Charakter eines Casinoabends passt. Herren sind mit Hemd oder Poloshirt herzlich willkommen, eine Krawatte ist nicht erforderlich. Bei Bedarf unterstützt unser Team gerne mit einem Leih-Sakko. Im Automatenspiel ist die Atmosphäre entspannter, dennoch bleibt ein gepflegtes Erscheinungsbild Teil unseres Anspruchs. Für Gäste mit dem Auto steht direkt an der Spielbank ein Parkhaus zur Verfügung. Die Lage im Kurpark macht den Besuch besonders angenehm und lässt sich ideal mit einem Spaziergang, Dinner oder Lounge-Abend verbinden. Wer den Abend im Le Blanc verbringen möchte, profitiert von einer rechtzeitigen Tischreservierung. Unser Team hilft vor Ort gerne bei Orientierung, Kartenservice, Restaurantfragen und aktuellen Events.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Zutritt und Registrierung
+</h4>
+<ul>
+            <li>• Zutritt ab 18 Jahren: Wir begrüßen volljährige Gäste in einem geregelten und stilvollen Casinoambiente.</li>
+            <li>• Gültiger Lichtbildausweis: Für den Einlass benötigen Gäste ein offizielles Ausweisdokument zur Identifikation.</li>
+            <li>• Registrierung am Empfang: Der Einlassprozess ist klar strukturiert und unterstützt eine sichere Atmosphäre.</li>
+            <li>• Einheitliche Regeln: Restaurant Le Blanc und Lounge befinden sich im Spielbankgebäude und unterliegen denselben Zutrittsanforderungen.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Dresscode in der Spielbank Bad Homburg
+</h4>
+<ul>
+            <li>• Klassisches Spiel: Wir empfehlen elegante, gepflegte Kleidung für Roulette, Black Jack und Poker.</li>
+            <li>• Herrenbekleidung: Hemd oder Poloshirt passen sehr gut, eine Krawatte ist nicht notwendig.</li>
+            <li>• Leih-Sakko: Bei Bedarf hilft unser Team gerne mit einem passenden Sakko weiter.</li>
+            <li>• Stilvoller Auftritt: Gepflegte Abendkleidung unterstreicht den besonderen Charakter unseres Hauses.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Anreise und Parken
+</h4>
+<ul>
+            <li>• Lage im Kurpark: Unser Haus verbindet Casinoabend, Spaziergang, Dinner und Entertainment an einem besonderen Ort.</li>
+            <li>• Parkhaus direkt an der Spielbank: Gäste erreichen unser Haus bequem und wettergeschützt.</li>
+            <li>• Gute Orientierung: Die Zufahrt ist über die innerstädtische Beschilderung einfach zu finden.</li>
+            <li>• Kombinierter Abend: Spiel, Bar, Restaurant und Lounge lassen sich ideal in einem Besuch verbinden.</li>
+        </ul><br>
+
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Treuevorteile, Bonuspunkte und besondere Gästeerlebnisse
+</h3>
+<p>
+In der Spielbank Bad Homburg bieten wir ein praktisches Vorteilsmodell für Gäste, die unser Automatenspiel, moderne Geräte und regelmäßige Casinoabende schätzen. Im Mittelpunkt steht die personalisierte Spielerkarte für das Automatenspiel, die an der Automatenkasse erhältlich ist. Mit dieser Karte können Gäste Guthaben nutzen, Gewinne speichern und bequem von Gerät zu Gerät wechseln. Die personalisierte Variante ermöglicht es außerdem, bei Einsätzen Bonuspunkte zu sammeln. Diese Bonuspunkte können direkt wieder im Spiel eingesetzt werden und machen den Besuch besonders komfortabel. Für den Einstieg eignet sich eine Tageskarte, während die personalisierte Karte für wiederkehrende Gäste den größten Mehrwert bietet. Unser System passt ideal zu über 160 Automaten, Touchbet-Roulette, Jackpot-Bar und modernen Spielbereichen. Zusätzlich bieten wir Erlebnisgutscheine, in denen Eintritt, Sekt, Glücksjetons, Menüs oder Spielerklärungen kombiniert werden. Gäste können ihren Casinoabend damit als Geschenk, Dinner-Erlebnis, romantischen Abend oder Gruppenbesuch gestalten. Ergänzend sorgen Turniere, Jackpot Festival, Black Jack-Bingo und weitere Aktionen für zusätzliche Spielmomente. Wir verbinden Treuevorteile mit Komfort, persönlichem Service und besonderen Erlebnissen. Unser Team erklärt gerne, wie Karte, Guthaben, Bonuspunkte und Auszahlungen funktionieren.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Registrierung und Teilnahme
+</h4>
+<ul>
+            <li>• Zutritt ab 18 Jahren: Unsere Spielangebote richten sich an volljährige Gäste.</li>
+            <li>• Lichtbildausweis: Für den Einlass und die Registrierung wird ein gültiges Ausweisdokument benötigt.</li>
+            <li>• Kartenservice: Die Spielerkarte erhalten Gäste direkt an der Automatenkasse.</li>
+            <li>• Personalisierte Karte: Diese Variante ist ideal, um bei Einsätzen Bonuspunkte zu sammeln.</li>
+            <li>• Guthabenfunktion: Guthaben kann auf der Karte geführt und bequem im Automatenspiel genutzt werden.</li>
+            <li>• Gewinnverwaltung: Gewinne können auf der Karte gespeichert und später weiterverwendet oder ausgezahlt werden.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Vorteilsstufen im Gästeerlebnis
+</h4>
+<ul>
+            <li>• Erster Besuch: Gäste lernen Empfang, Spielbereiche, Bars, Restaurant Le Blanc und Lounge kennen.</li>
+            <li>• Tageskarte: Der einfache Einstieg für einen spontanen Besuch im Automatenspiel.</li>
+            <li>• Personalisierte Spielerkarte: Die beste Wahl für Bonuspunkte und wiederkehrende Spielmomente.</li>
+            <li>• Erlebnisgast: Gutscheine kombinieren Eintritt, Sekt, Glücksjetons, Dinner und Spielerklärungen.</li>
+            <li>• Eventgast: Turniere, Lounge Night, Jackpot Festival und Black Jack-Bingo erweitern den Casinoabend.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Bonusvorteile und Zahlen
+</h4>
+<ul>
+            <li>• Bonuspunkte bei Einsätzen: Mit der personalisierten Spielerkarte sammeln Gäste Punkte im Automatenspiel.</li>
+            <li>• Direkte Nutzung: Gesammelte Bonuspunkte können wieder im Spiel eingesetzt werden.</li>
+            <li>• Glücksjetons im Wert von 10 Euro: Teil des Pakets „Glück & Romantik“.</li>
+            <li>• Glücksjetons im Wert von 16 Euro: Bestandteil des Pakets „Wellness & Genuss“.</li>
+            <li>• Glücksjetons im Wert von 20 Euro: Enthalten in „Glück & Genuss“, „Erlebnis Spielbank“ und „Junggesell:innen Abend“.</li>
+            <li>• Ultimate Jackpot ab 2 Euro: Zusatzchance im Ultimate Texas Hold’em mit 100% Jackpot bei Royal Flush.</li>
+            <li>• Jackpot Festival mit 24.864 Euro: Monatliche Extragewinne im Automatenspiel.</li>
+            <li>• Black Jack-Bingo bis 3.000 Euro: Tagesgewinn bei passender Ergebnisfolge am Black-Jack-Tisch.</li>
+            <li>• Black Jack 200 mit 10.000 Euro: Turnierformat mit starkem Gesamtpreisgeld.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="">
+            <div class="container">
+                <div class="sprovidersBlock block">
+                    <h2 class="sprovidersTitle title">  Softwareanbieter </h2>
+                    <div class="sprovidersGroup" id="providersContainer">
+                        <!-- Provider images will be dynamically inserted here --></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Unterhaltung und Gaming im Spielbank Bad Homburg</h2>
+                        <div class="historyDescription"><h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Jackpots, Spielaktionen und besondere Gewinnmomente
+</h3>
+<p>
+In der Spielbank Bad Homburg schaffen wir Spielmomente, die weit über den klassischen Casinoabend hinausgehen. Neben Bonuspunkten der personalisierten Spielerkarte erleben Gäste bei uns Jackpots, Turniere, Sonderaktionen, Erlebnisgutscheine und abwechslungsreiche Veranstaltungen. Im Automatenspiel warten über 160 moderne Geräte, mehrere Jackpotformate und Einsätze bereits ab 1 Cent. Der Mystery Jackpot Homburger Glück gehört zu den auffälligsten Gewinnchancen in unserem Haus und verbindet mehrere Gewinnstufen. Im Ultimate Texas Hold’em sorgt der Ultimate Jackpot mit einem Zusatzeinsatz von 2 Euro für zusätzliche Spannung. Beim Black Jack ist Chance Blanc ein besonderes Element, denn mit der speziellen François-Blanc-Karte kann ein Black Jack mit 3:1 ausgezahlt werden. Gold Jack ergänzt das Spiel mit möglichen Auszahlungen bis 300:1. Das Jackpot Festival bringt monatlich Extragewinne im Gesamtwert von 24.864 Euro ins Automatenspiel. Black Jack-Bingo bietet Tagesgewinne bis 3.000 Euro, wenn die passende Ergebnisfolge vorhergesagt wird. Weitere Highlights sind Mystery Roulette, Mystery Black Jack, Roulette-Turniere, Black Jack 200 und Turniere im Automatenspiel. Für Gäste, die Genuss und Spiel verbinden möchten, bieten wir Formate wie Glücksdinner mit Menü und Glücksjetons. Unsere Saisonaktionen, Lounge Nights und Eventabende machen die Spielbank Bad Homburg zu einem Ort für Spiel, Genuss und Unterhaltung.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Jackpots und Gewinnchancen
+</h4>
+<ul>
+            <li>• Homburger Glück Mystery Jackpot: Unser großer Jackpot mit mehreren Stufen wie Grand, Major und Minor.</li>
+            <li>• Mystery Jackpot rund €107.608: Ein starker Orientierungspunkt für aktuelle Jackpot-Spannung.</li>
+            <li>• Grand Jackpot rund €22.887: Eine attraktive Gewinnstufe innerhalb des Homburger Glücks.</li>
+            <li>• Clover Link Xtreme rund €17.663: Ein beliebtes Jackpotformat im Automatenspiel.</li>
+            <li>• Diamond Link rund €22.367: Ein weiteres Highlight für Jackpot-Fans.</li>
+            <li>• Lightning Link rund €19.969: Dynamische Jackpot-Unterhaltung an modernen Automaten.</li>
+            <li>• Dragon Link rund €16.797: Ein abwechslungsreicher Link-Jackpot für Automatenspieler.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Spielbezogene Specials
+</h4>
+<ul>
+            <li>• Ultimate Jackpot ab 2 Euro: Zusatzchance im Ultimate Texas Hold’em mit 100% Jackpot bei Royal Flush.</li>
+            <li>• Straight Flush: 600 Euro Auszahlung im Ultimate Jackpot.</li>
+            <li>• Four of a Kind: 200 Euro Auszahlung im Ultimate Jackpot.</li>
+            <li>• Full House: 20 Euro Auszahlung im Ultimate Jackpot.</li>
+            <li>• Chance Blanc: Besonderer Black Jack mit François-Blanc-Karte und Auszahlung 3:1.</li>
+            <li>• Gold Jack: Zusatzwette mit 19:1, 77:1 oder bis zu 300:1.</li>
+            <li>• Push 22: Zusatzwette im Free Bet Black Jack mit 11-facher Auszahlung.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Events, Turniere und saisonale Aktionen
+</h4>
+<ul>
+            <li>• Jackpot Festival: Monatliche Extragewinne im Gesamtwert von 24.864 Euro.</li>
+            <li>• Black Jack-Bingo: Tagesgewinne bis 3.000 Euro am Black-Jack-Tisch.</li>
+            <li>• Black Jack 200: Turnierformat mit 10.000 Euro Gesamtpreisgeld und 200 Euro Buy-in.</li>
+            <li>• Roulette-Turnier: Turnierserie mit einem Gesamtpreisgeld über 5.000 Euro.</li>
+            <li>• Mystery Roulette: Sonderformat mit Gewinnchance auf 1.000 Euro.</li>
+            <li>• Mystery Black Jack: Spielaktion mit 1.000 Euro Gewinnmoment in der Abendserie.</li>
+            <li>• Glücksdinner: Genussformat mit Menü und Glücksjetons bis 36 Euro.</li>
+            <li>• Saison Jackpot: Saisonale Zusatzgewinne, zum Beispiel 1.000 Euro in regelmäßigen Intervallen.</li>
+        </ul><br>
+
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — beliebte Spiele in unserem Casino
+</h3>
+<p>
+In der Spielbank Bad Homburg verbinden wir klassische Tischspiele, modernes Automatenspiel und besondere Eventformate zu einem vielseitigen Spielerlebnis. Roulette nimmt in unserem Klassischen Spiel eine zentrale Rolle ein, denn es steht für die elegante Tradition eines Casinoabends. Gäste erleben bei uns die französische Form des Roulette ebenso wie American Roulette und können unterschiedliche Chancen und Satzmöglichkeiten nutzen. Black Jack begeistert alle, die Dynamik, Strategie und das Spiel gegen die Bank schätzen. Neben dem klassischen Black Jack bieten wir besondere Elemente wie Chance Blanc, Gold Jack und Free Bet Black Jack. Ultimate Texas Hold’em ist unser Pokerformat gegen den Dealer und überzeugt mit klarer Struktur, strategischen Entscheidungen und dem Ultimate Jackpot. Das Automatenspiel gehört zu den größten Bereichen unseres Hauses und bietet über 160 moderne Geräte auf mehreren Ebenen. Dort erleben Gäste klassische Automatenspiele, aktuelle Neuheiten, Link-Jackpots und Einsätze bereits ab 1 Cent. Touchbet-Roulette bringt das Roulette-Erlebnis in eine moderne elektronische Form mit 23 Stationen. Turnierformate in Black Jack und Roulette sorgen zusätzlich für Wettbewerb, Spannung und attraktive Preisgelder. Events wie Black Jack-Bingo, Mystery Roulette und Jackpot Festival ergänzen unser Spielangebot. So findet jeder Gast in der Spielbank Bad Homburg seinen eigenen Stil: klassisch, strategisch, modern, jackpotorientiert oder turnierbezogen.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Klassische Tischspiele
+</h4>
+<ul>
+            <li>• Roulette: Französisches Roulette und American Roulette in elegantem Spielbankambiente.</li>
+            <li>• Black Jack: Ein dynamisches Kartenspiel gegen die Bank mit klaren Entscheidungen und spannenden Gewinnmomenten.</li>
+            <li>• Ultimate Texas Hold’em: Poker gegen den Dealer mit Ante, Blind, Play und zusätzlichem Ultimate Jackpot.</li>
+            <li>• Free Bet Black Jack: Variante mit Free Split und Free Double in passenden Spielsituationen.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Automatenspiel und elektronische Formate
+</h4>
+<ul>
+            <li>• Automatenspiel: Über 160 moderne Geräte mit Klassikern, Neuheiten und Jackpot-Unterhaltung.</li>
+            <li>• Touchbet-Roulette: Moderne Multiroulette-Anlage mit 23 Stationen.</li>
+            <li>• Link-Jackpots: Beliebte Serien wie Clover Link, Diamond Link, Lightning Link und Dragon Link.</li>
+            <li>• Cashless Card: Komfortables Kartensystem für Guthaben, Gewinne und Bonuspunkte.</li>
+        </ul><br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Spezielle Spielformate
+</h4>
+<ul>
+            <li>• Homburger Glück: Mystery Jackpot mit mehreren Gewinnstufen im Automatenspiel.</li>
+            <li>• Gold Jack: Black-Jack-Zusatzwette mit Gewinnmöglichkeiten bis 300:1.</li>
+            <li>• Chance Blanc: Besonderes Black-Jack-Element mit François-Blanc-Karte und Auszahlung 3:1.</li>
+            <li>• Ultimate Jackpot: 2-Euro-Zusatzchance im Ultimate Texas Hold’em mit 100% Jackpot bei Royal Flush.</li>
+            <li>• Black Jack-Bingo: Eventformat mit Tagesgewinnen bis 3.000 Euro.</li>
+            <li>• Roulette-Turnier: Wettbewerb mit Preisgeld über 5.000 Euro.</li>
+        </ul><br>
+
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Mindesteinsätze, Buy-ins und Gewinnrahmen
+</h3>
+<p>
+In der Spielbank Bad Homburg finden Gäste passende Spielmöglichkeiten für unterschiedliche Vorlieben, vom Automatenspiel mit kleinem Einsatz bis zu Turnieren mit festem Buy-in. Unser Automatenspiel beginnt bereits ab 1 Cent und bietet über 160 moderne Geräte mit zahlreichen Jackpotformaten. Im Klassischen Spiel bestimmen Tischlimits, Spielart und Zusatzwetten den Rahmen, während Specials wie Ultimate Jackpot, Gold Jack und Turniere eigene Gewinnstrukturen mitbringen.
+</p>
+<br>
+<table style="width: 100%; border-collapse: collapse; margin: 20px auto; font-family: sans-serif; color: #ffffff;font-size:14px">
+  <thead>
+    <tr style="background-color: #D00E14;">
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">Spiel oder Bereich</th>
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">Mindest&shy;einsatz / Teilnahme</th>
+      <th style="border: 1px solid #ffffff; padding: 12px; text-align: left; color: #ffffff; font-weight: bold;">Maximaler Gewinn&shy;rahmen
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Auto&shy;maten&shy;spiel</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">ab 1 Cent</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">abhängig von Gerät und Jackpot</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Touchbet-Roulette</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">nach Stationslimit</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">abhängig vom gewählten Format</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Klassis&shy;ches Roulette</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Richtwert ab 2 Euro</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">abhängig von Tisch und Chance</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Black Jack</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">nach Tischlimit</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Gold Jack bis 300:1</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Chance Blanc Black Jack</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Black-Jack-Einsatz</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">3:1 Auszah&shy;lung</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Free Bet Black Jack</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Black-Jack-Einsatz</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Push 22 mit 11:1</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Ultimate Texas Hold’em</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">4 Euro auf Ante und Blind</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">bis 500:1 nach Gewinn&shy;plan</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Ultimate Jackpot</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">2 Euro</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">100% Jackpot bei Royal Flush</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Roulette-Turnier</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">20 Euro pro Spiel&shy;runde</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Final&shy;preise bis 2.500 Euro</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Black Jack 200</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">200 Euro Buy-in</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">10.000 Euro Gesamt&shy;preisgeld</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ffffff; padding: 10px;"><strong>Black Jack-Bingo</strong></td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">Teilnahme am Black-Jack-Tisch</td>
+      <td style="border: 1px solid #ffffff; padding: 10px;">bis 3.000 Euro Tages&shy;gewinn</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Events, Lounge Night und besondere Unterhaltung
+</h3>
+<p>
+In der Spielbank Bad Homburg gestalten wir Abende, die Casinospiel, Musik, Genuss und Events zu einem vielseitigen Erlebnis verbinden. Unser Haus steht nicht nur für Roulette, Black Jack, Poker und Automatenspiel, sondern auch für besondere Veranstaltungen mit Atmosphäre. Im Mittelpunkt unseres Nightlife-Angebots steht die Lounge, die samstags zum Treffpunkt für Musik, Drinks und Tanz wird. Mit wechselnden DJs, Cocktails, Longdrinks und lebendiger Stimmung ergänzt sie den Spielabend perfekt.
+</p>
+<br>
+<p>
+Die Lounge Night gehört zu den beliebtesten Formaten unseres Hauses. Samstags öffnen wir die Lounge von 21:00 bis 03:00 Uhr und schaffen einen Abend zwischen stilvoller Bar, Dancefloor und moderner Clubkultur. Unterschiedliche Musikrichtungen und wechselnde DJs sorgen dafür, dass jeder Besuch ein eigenes Profil bekommt. Ergänzend bringen Formate wie die hr1 Dancefloor Party zusätzliche Energie in unser Eventprogramm.
+</p>
+<br>
+<p>
+Auch im Spielbereich bieten wir Gästen regelmäßig besondere Höhepunkte. Black Jack 200, Roulette-Turnier, Black Jack-Bingo, Mystery Roulette, Mystery Black Jack, Jackpot Festival und Turniere im Automatenspiel bringen Wettbewerb und Zusatzgewinne in den Casinoabend. Black Jack 200 überzeugt mit 200 Euro Buy-in und einem Gesamtpreisgeld von 10.000 Euro. Das Roulette-Turnier bietet ein Gesamtpreisgeld über 5.000 Euro, während Black Jack-Bingo Tagesgewinne bis 3.000 Euro ermöglicht.
+</p>
+<br>
+<p>
+Für besondere Anlässe kann unsere Lounge auch als Eventlocation genutzt werden. Firmenfeiern, Jubiläen, Weihnachtsfeiern und private Gruppenabende erhalten bei uns ein besonderes Spielbank-Flair. Gäste können Events mit Dinner im Le Blanc, Drinks an Dostojewskis Bar, Glücksjetons, Spielerklärungen und anschließendem Entertainment kombinieren. So wird die Spielbank Bad Homburg zu einem Ort für stilvolle Abende, besondere Feiern und unvergessliche Unterhaltung.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Events und Entertainment
+</h4>
+<ul>
+            <li>• Lounge Night: Samstags mit DJs, Drinks, Tanz und Atmosphäre bis 03:00 Uhr.</li>
+            <li>• hr1 Dancefloor Party: Musikformat für Gäste, die einen lebendigen Clubabend suchen.</li>
+            <li>• Jackpot Festival: Monatliche Extragewinne im Gesamtwert von 24.864 Euro.</li>
+            <li>• Black Jack 200: Turnier mit 200 Euro Buy-in und 10.000 Euro Gesamtpreisgeld.</li>
+            <li>• Roulette-Turnier: Wettbewerb mit einem Gesamtpreisgeld über 5.000 Euro.</li>
+            <li>• Black Jack-Bingo: Spielaktion mit Tagesgewinn bis 3.000 Euro.</li>
+            <li>• Mystery Roulette: Sonderformat mit Gewinnchance auf 1.000 Euro.</li>
+            <li>• Mystery Black Jack: Abendaktion mit 1.000 Euro Gewinnmoment.</li>
+            <li>• Glücksdinner: Menü und Spielmoment mit Glücksjetons bis 36 Euro.</li>
+            <li>• Firmenfeiern: Lounge als besondere Eventlocation für geschlossene Anlässe.</li>
+            <li>• Erlebnisgutscheine: Pakete für Dinner, Sekt, Glücksjetons und Spielerklärungen.</li>
+        </ul><br>
+
+<h3 style = "font-weight: bold;font-size: 32px;">
+Spielbank Bad Homburg — Bars, Restaurant Le Blanc, Hotels und Genussmomente
+</h3>
+<p>
+In der Spielbank Bad Homburg verbinden wir Spiel, Gastronomie, Bars und Entspannung zu einem stimmigen Abend. Unser Restaurant Le Blanc ist der kulinarische Mittelpunkt unseres Hauses und eignet sich ideal für ein Dinner vor dem Spiel, einen romantischen Abend, ein Treffen mit Freunden oder einen stilvollen Abschluss. Wir setzen auf regionale und internationale Küche, saisonale Zutaten, kreative Gerichte und eine passende Weinauswahl. Gäste können einzelne Gerichte oder mehrgängige Menüs genießen und den Restaurantbesuch perfekt mit Roulette, Black Jack, Poker oder Automatenspiel kombinieren.
+</p>
+<br>
+<p>
+Dostojewskis Bar ist unser stilvoller Treffpunkt für Cocktails, Longdrinks und ausgewählte Spirituosen. Gäste nutzen die Bar gerne für eine Pause zwischen den Spielen oder als entspannten Mittelpunkt des Abends. Im Automatenspiel ergänzt die Jackpot-Bar das Erlebnis mit Getränken in direkter Nähe zu modernen Geräten und Jackpotformaten. So bleibt der gesamte Besuch angenehm, flexibel und abwechslungsreich.
+</p>
+<br>
+<p>
+Unsere Lounge wird samstags zum Ort für Musik, Tanz und Nightlife-Stimmung. Wechselnde DJs, Drinks und ein lebendiges Publikum schaffen einen gelungenen Übergang vom Spielabend zum Clubmoment. Viele Gäste beginnen mit einem Dinner im Le Blanc, erleben danach Roulette, Black Jack oder Automatenspiel und lassen den Abend anschließend in der Lounge ausklingen. Dadurch wird unser Haus zu einem kompletten Ziel für einen stilvollen Abend.
+</p>
+<br>
+<p>
+Für Gäste, die den Besuch mit einer Übernachtung verbinden möchten, geben wir Empfehlungen zu nahegelegenen Hotels mit besonderen Konditionen für Spielbankgäste. Dazu zählen Maritim Hotel Bad Homburg, Steigenberger Hotel Bad Homburg, Comfort Hotel Am Kurpark und Parkhotel Bad Homburg. Ergänzend bieten unsere Erlebnisgutscheine attraktive Kombinationen aus Eintritt, Sekt, Glücksjetons, Menüs, Spielerklärungen und besonderen Momenten. So lässt sich ein Besuch in der Spielbank Bad Homburg als Dinnerabend, Geschenk, Kurztrip oder Eventerlebnis gestalten.
+</p>
+<br>
+<h4 style = "font-weight: bold; font-size: 24px;">
+Genuss, Bars und Erholung
+</h4>
+<ul>
+            <li>• Restaurant Le Blanc: Kulinarischer Mittelpunkt mit regionaler, internationaler und saisonaler Küche.</li>
+            <li>• Dostojewskis Bar: Stilvolle Bar für Cocktails, Longdrinks und ausgewählte Spirituosen.</li>
+            <li>• Jackpot-Bar: Praktischer Treffpunkt im Automatenspiel für Getränke und Spielpausen.</li>
+            <li>• Lounge: Samstags mit DJs, Tanz, Drinks und Nightlife-Atmosphäre.</li>
+            <li>• Terrasse Le Blanc: Saisonaler Ort für entspannte Genussmomente.</li>
+            <li>• Maritim Hotel Bad Homburg: Komfortable Übernachtungsmöglichkeit für einen längeren Besuch.</li>
+            <li>• Steigenberger Hotel Bad Homburg: Stilvolles Hotel in Nähe unseres Hauses.</li>
+            <li>• Comfort Hotel Am Kurpark: Praktische Option für Casinoabend und Kurzaufenthalt.</li>
+            <li>• Parkhotel Bad Homburg: Angenehmes Hotel für Gäste, die den Abend entspannt verlängern möchten.</li>
+            <li>• Erlebnisgutscheine: Pakete mit Eintritt, Sekt, Glücksjetons, Menüs und Spielerklärungen.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>FAQ</span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="knnen_gste_die_spielbank_bad_homburg_auch_ohne_spielerfahrung_besuchen"/><label
+                            class="faqLabel" for="knnen_gste_die_spielbank_bad_homburg_auch_ohne_spielerfahrung_besuchen">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Können Gäste die Spielbank Bad Homburg auch ohne Spielerfahrung besuchen? </span></label>
+                        <div class="faqContent">
+                            <p>Ja, wir begrüßen sehr gerne Gäste, die zum ersten Mal zu uns kommen. Unser Team unterstützt beim Empfang, bei der Orientierung im Haus, im Automatenspiel, im Restaurant, an den Bars und bei allgemeinen Fragen zum Spiel. Für Roulette gibt es in ausgewählten Paketen und Formaten auch Spielerklärungen.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="knnen_gste_einen_besuch_in_der_spielbank_bad_homburg_verschenken"/><label
+                            class="faqLabel" for="knnen_gste_einen_besuch_in_der_spielbank_bad_homburg_verschenken">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Können Gäste einen Besuch in der Spielbank Bad Homburg verschenken? </span></label>
+                        <div class="faqContent">
+                            <p>Ja, unsere Erlebnisgutscheine eignen sich sehr gut als Geschenk. Je nach Paket können Eintritt, Begrüßungssekt, Glücksjetons, Menü im Le Blanc, Roulette-Erklärung oder zusätzliche Genussmomente enthalten sein.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="was_sind_glcksjetons"/><label
+                            class="faqLabel" for="was_sind_glcksjetons">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Was sind Glücksjetons? </span></label>
+                        <div class="faqContent">
+                            <p>Glücksjetons sind Spieljetons, die in ausgewählten Erlebnis- und Geschenkpaketen enthalten sind. Sie verbinden Dinner, Barbesuch oder Event mit einem echten Spielmoment im Casino.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_turniere_in_der_spielbank_bad_homburg"/><label
+                            class="faqLabel" for="gibt_es_turniere_in_der_spielbank_bad_homburg">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es Turniere in der Spielbank Bad Homburg? </span></label>
+                        <div class="faqContent">
+                            <p>Ja, wir bieten verschiedene Turnierformate an, darunter Black Jack 200, Roulette-Turnier und Events im Automatenspiel. Diese Formate schaffen Wettbewerb, Spannung und attraktive Preisgeldmomente.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="worin_unterscheiden_sich_automatenspiel_und_klassisches_spiel"/><label
+                            class="faqLabel" for="worin_unterscheiden_sich_automatenspiel_und_klassisches_spiel">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Worin unterscheiden sich Automatenspiel und Klassisches Spiel? </span></label>
+                        <div class="faqContent">
+                            <p>Das Automatenspiel umfasst über 160 moderne Geräte, Touchbet-Roulette, Cashless Card und Jackpotformate. Das Klassische Spiel konzentriert sich auf Roulette, Black Jack und Poker an Tischen mit Croupiers und elegantem Spielbankflair.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="wie_sieht_ein_idealer_abend_in_der_spielbank_bad_homburg_aus"/><label
+                            class="faqLabel" for="wie_sieht_ein_idealer_abend_in_der_spielbank_bad_homburg_aus">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Wie sieht ein idealer Abend in der Spielbank Bad Homburg aus? </span></label>
+                        <div class="faqContent">
+                            <p>Ein gelungener Besuch beginnt mit dem Empfang, geht weiter mit einem Dinner im Le Blanc, einer Runde Roulette, Black Jack, Poker oder Automatenspiel, einem Drink an Dostojewskis Bar und endet samstags in der Lounge. Für besondere Anlässe empfehlen sich unsere Erlebnisgutscheine mit Glücksjetons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://spielbank-bad-homburg-casino.com" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1777281219-logo-white-1-1.webp" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Spielbank Bad Homburg" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Spielbank Bad Homburg" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Spielbank Bad Homburg" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Spielbank Bad Homburg" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Spielbank Bad Homburg" /></div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Spielbank Bad Homburg </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Bonus sichern";
+    var welcomeBonusText = "Willkommensbonus";
+    var bonusDetailsButtonText = "Bonus erhalten";
+    var playNowText = "Jetzt spielen";
+    var maximumAmountText = "Maximalbetrag";
+    var wagerText = "Wager";
+    var bonusCodeText = "Bonuscode";
+    var depositText = "";
+    var casinoName = "Spielbank Bad Homburg";
+</script>
+
+</body>
+</html>
